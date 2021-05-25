@@ -8,17 +8,54 @@
     <title>LikingLikes</title>
   </head>
   <body>
+    <nav>
+      <h1>Network</h1>
+    </nav>
+    <div class="title">
+      <h1>Your Feed</h1>
+    </div>
     <div class="container">
-      <div class="card">
-        <div class="user">
-          <h2>Some User</h2>
-          <p id="count">0 Likes</p>
-          <button onclick="like()" class="like">Like</button>
+      <div class="profile">
+        <img class="avatar" src="./images/user-circle.png" alt="Avatar" />
+        <a href="#">Add an avatar</a>
+        <h2>James Doe</h2>
+      </div>
+      <div class="newsFeed">
+        <div class="post">
+          <div class="user">
+            <h2>Neil M</h2>
+            <p id="countNeil">9 Likes</p>
+            <button onclick="likeNeil()" class="like">Like</button>
+          </div>
+          <div class="userText">
+            <p>
+              I just set up this new Discord bot, let me know what you all
+              think. <a href="#">link</a>
+            </p>
+          </div>
         </div>
-        <div class="userText">
-          <p class="post">
-            This is some filler text, it can say anything we like
-          </p>
+        <div class="post">
+          <div class="user">
+            <h2>Nichole K</h2>
+            <p id="countNichole">12 Likes</p>
+            <button onclick="likeNichole()" class="like">Like</button>
+          </div>
+          <div class="userText">
+            <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="user">
+            <h2>Jim R</h2>
+            <p id="countJim">9 Likes</p>
+            <button onclick="likeJim()" class="like">Like</button>
+          </div>
+          <div class="userText">
+            <p>
+              I can't stop listening to the <a href="#">new album</a>. Who else
+              is liking it?
+            </p>
+          </div>
         </div>
       </div>
     </div>
